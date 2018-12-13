@@ -57,8 +57,7 @@ public class MainActivity extends AppCompatActivity {
         btn_others.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), TabbedActivity.class);
-                myIntent.putExtra("pos", POS_OTHERS);
+                Intent myIntent = new Intent(v.getContext(), PlanActivity.class);
                 startActivity(myIntent);
             }
         });

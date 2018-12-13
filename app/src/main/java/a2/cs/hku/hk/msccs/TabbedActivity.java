@@ -11,12 +11,10 @@ import android.support.v4.view.ViewPager;
 
 import a2.cs.hku.hk.msccs.fragments.AlumniFragment;
 import a2.cs.hku.hk.msccs.fragments.ApplicantFragment;
-import a2.cs.hku.hk.msccs.fragments.OthersFragment;
 import a2.cs.hku.hk.msccs.fragments.StudentFragment;
 
 import static a2.cs.hku.hk.msccs.MainActivity.POS_ALUMNI;
 import static a2.cs.hku.hk.msccs.MainActivity.POS_APPLICANT;
-import static a2.cs.hku.hk.msccs.MainActivity.POS_OTHERS;
 import static a2.cs.hku.hk.msccs.MainActivity.POS_STUDENT;
 
 public class TabbedActivity extends FragmentActivity {
@@ -118,8 +116,6 @@ public class TabbedActivity extends FragmentActivity {
                 case POS_ALUMNI:
                     return AlumniFragment.newInstance();
 
-                case POS_OTHERS:
-                    return OthersFragment.newInstance();
             }
 
             return null;
@@ -136,9 +132,6 @@ public class TabbedActivity extends FragmentActivity {
 
                 case POS_ALUMNI:
                     return "Alumni";
-
-                case POS_OTHERS:
-                    return "Others";
             }
 
             return null;
@@ -146,7 +139,7 @@ public class TabbedActivity extends FragmentActivity {
 
         @Override
         public int getCount() {
-            return 4;
+            return 3;
         }
     }
 

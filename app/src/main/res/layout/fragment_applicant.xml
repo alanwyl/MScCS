@@ -36,17 +36,25 @@
 
     </android.support.v7.widget.CardView>
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.GridLayout
+        xmlns:grid="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        grid:columnCount="2">
+
+        <Button
+            android:id="@+id/btn_admission"
+            grid:layout_columnWeight="1"
+            android:layout_height="120dp"
+            android:text="2019 Admission" />
+
+        <Button
+            android:id="@+id/btn_plan"
+            grid:layout_columnWeight="1"
+            android:layout_height="120dp"
+            android:text="Plan my Advancement" />
+
+
+    </android.support.v7.widget.GridLayout>
 
 </LinearLayout>

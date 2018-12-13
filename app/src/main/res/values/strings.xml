@@ -85,5 +85,7 @@
 
 
     </string>
+    <string name="title_activity_admission">AdmissionActivity</string>
+    <string name="title_activity_plan">PlanActivity</string>
 
 </resources>
