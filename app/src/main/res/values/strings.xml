@@ -8,4 +8,27 @@
     <string name="program_overview_detail"><![CDATA[
         The MSc(CompSc) programme is a comprehensive postgraduate study programme provides advanced and in-depth learning in Computer Science. The programme is credit unit based, with courses of both applied and fundamental nature. Students can choose from a comprehensive and diversified study in Computer Science courses or focussed streams of study. Focussed streams of study represent a cohesive collection of related courses that provides both fundamental and in-depth exposure to students in a given ICT domain.
     ]]></string>
+
+
+    <string name="student_links_content">
+        The University of Hong Kong Home Page\n   -   https://www.hku.hk\n\n
+The Faculty of Engineering\n
+   -  http://engg.hku.hk\n
+\n
+Department of Computer Science\n
+   -  http://www.cs.hku.hk\n
+\n
+Information Technology Services\n
+   -  http://www.its.hku.hk\n
+\n
+Centre of Development and Resources for Students\n
+   -  http://www.cedars.hku.hk\n
+\n
+China Affairs Office\n
+   -  http://www.aal.hku.hk/cao\n\n
+The HKU Libraries\n
+   -  https://lib.hku.hk/\n
+
+  </string>
+
 </resources>

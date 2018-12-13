@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,6 +16,7 @@
 
         android:layout_height="wrap_content"
         android:layout_gravity="left"
+        android:background="@android:color/holo_purple"
         android:text="Course" />
 
     <Button
@@ -22,6 +25,7 @@
 
         android:layout_height="wrap_content"
         android:layout_gravity="left"
+        android:background="@android:color/holo_blue_light"
         android:text="MSc(Comp Sc) Intranet" />
 
     <Button
@@ -30,6 +34,7 @@
 
         android:layout_height="wrap_content"
         android:layout_gravity="left"
+        android:background="@android:color/holo_red_light"
         android:text="HKU Portal" />
 
     <Button
@@ -38,7 +43,17 @@
 
         android:layout_height="wrap_content"
         android:layout_gravity="left"
+        android:background="@android:color/holo_green_light"
         android:text="Useful Links" />
+
+    <TextView
+        android:id="@+id/links_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/student_links_content"
+        android:autoLink="web"
+        android:textSize="16sp"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/help"
@@ -46,6 +61,7 @@
 
         android:layout_height="wrap_content"
         android:layout_gravity="left"
+        android:background="@android:color/holo_orange_dark"
         android:text="I need help" />
 
     <Button
@@ -53,6 +69,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
+        android:background="@android:color/holo_orange_light"
         android:text="Learning Environment" />
 
 </LinearLayout>
+</ScrollView>

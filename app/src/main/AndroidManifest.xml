@@ -18,7 +18,6 @@
 
         <activity android:name=".StudentCourseActivity" />
         <activity android:name=".StudentHelpActivity" />
-        <activity android:name=".StudentLinkActivity" />
 
         <activity
             android:name=".TabbedActivity"

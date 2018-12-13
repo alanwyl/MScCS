@@ -8,11 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import a2.cs.hku.hk.msccs.R;
 import a2.cs.hku.hk.msccs.StudentCourseActivity;
 import a2.cs.hku.hk.msccs.StudentHelpActivity;
-import a2.cs.hku.hk.msccs.StudentLinkActivity;
 
 public class StudentFragment extends Fragment {
     Button btn_course;
@@ -21,6 +21,8 @@ public class StudentFragment extends Fragment {
     Button btn_links;
     Button btn_help;
     Button btn_environment;
+
+    TextView link_content;
 
     public StudentFragment() {
     }
@@ -40,6 +42,8 @@ public class StudentFragment extends Fragment {
         btn_links = (Button ) rootView.findViewById(R.id.links);
         btn_help = (Button) rootView.findViewById(R.id.help);
         btn_environment = (Button) rootView.findViewById(R.id.environment);
+
+        link_content = (TextView)rootView.findViewById(R.id.links_content);
 
         btn_course.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,8 +78,14 @@ public class StudentFragment extends Fragment {
         btn_links.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), StudentLinkActivity.class);
-                startActivity(myIntent);
+                if (link_content.getVisibility() == View.VISIBLE){
+                    //set not visible
+                    link_content.setVisibility(View.GONE);
+                }else{
+                    //set visible
+                    link_content.setVisibility(View.VISIBLE);
+
+                }
             }
         });
 
