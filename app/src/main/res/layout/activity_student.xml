@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudentActivity">
+
+    <Button
+        android:id="@+id/course"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Course" />
+
+    <Button
+        android:id="@+id/msc_intranet"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="MSc(Comp Sc) Intranet" />
+
+    <Button
+        android:id="@+id/portal"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="HKU Portal" />
+
+    <Button
+        android:id="@+id/links"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Useful Links" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="I need help" />
+
+    <Button
+        android:id="@+id/environment"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Learning Environment" />
+
+
+
+
+
+</LinearLayout>
