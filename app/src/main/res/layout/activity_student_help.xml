@@ -25,7 +25,7 @@
             android:layout_margin="30dp"
             android:scaleType="fitStart"
 
-            android:src="@mipmap/Listen" />
+            android:src="@mipmap/listen" />
 
         <TextView
             android:layout_width="wrap_content"
