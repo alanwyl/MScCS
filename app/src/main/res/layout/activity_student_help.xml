@@ -5,5 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StudentHelpActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.StudentFragment">
+
+        <ImageView
+            android:layout_width="145dp"
+            android:layout_height="143dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:scaleType="fitStart"
+
+            android:src="@mipmap/Listen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="We are listening..."
+            android:textSize="22sp" />
+
+        <CheckBox android:id="@+id/die"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I want to die"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/builled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I got builled"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox android:id="@+id/fuck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F*ck my Life"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox android:id="@+id/sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I want to sleep"
+            android:onClick="onCheckboxClicked"/>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Submit" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

@@ -11,24 +11,79 @@
 
 
     <string name="student_links_content">
-        The University of Hong Kong Home Page\n   -   https://www.hku.hk\n\n
-The Faculty of Engineering\n
-   -  http://engg.hku.hk\n
-\n
-Department of Computer Science\n
-   -  http://www.cs.hku.hk\n
-\n
-Information Technology Services\n
-   -  http://www.its.hku.hk\n
-\n
-Centre of Development and Resources for Students\n
-   -  http://www.cedars.hku.hk\n
-\n
-China Affairs Office\n
-   -  http://www.aal.hku.hk/cao\n\n
-The HKU Libraries\n
-   -  https://lib.hku.hk/\n
-
+        The University of Hong Kong Home Page\n
+        -   https://www.hku.hk\n
+        \n
+        The Faculty of Engineering\n
+        -  http://engg.hku.hk\n
+        \n
+        Department of Computer Science\n
+        -  http://www.cs.hku.hk\n
+        \n
+        Information Technology Services\n
+        -  http://www.its.hku.hk\n
+        \n
+        Centre of Development and Resources for Students\n
+        -  http://www.cedars.hku.hk\n
+        \n
+        China Affairs Office\n
+        -  http://www.aal.hku.hk/cao\n\n
+        The HKU Libraries\n
+        -  https://lib.hku.hk/\n
   </string>
+
+    <string name="student_courses">
+        MSc(CompSc) Courses\n
+        \n
+        Cyber Security\n
+        COMP7806\t\tTopic in information security\n
+        COMP7901\t\tLegal protection of digital property\n
+        COMP7903\t\tDigital investigation and forensics\n
+        COMP7904\t\tInformation security: attacks and defense\n
+        COMP7905\t\tReverse engineering and malware analysis\n
+        COMP7906\t\tIntroduction to cyber security\n
+        \n
+        Financial Computing\n
+        COMP7103\t\tData mining\n
+        COMP7405\t\tTechniques in computational finance\n
+        COMP7406\t\tSoftware development for quantitative finance\n
+        COMP7407\t\tSecurities transaction banking\n
+        COMP7408\t\tDistributed ledger and blockchain technology\n
+        COMP7802\t\tIntroduction to financial computing\n
+        COMP7808\t\tTopic in financial computing\n
+        COMP7906\t\tIntroduction to cyber security\n
+        \n
+        Multimedia Computing\n
+        COMP7502\t\tImage processing and computer vision\n
+        COMP7503\t\tMultimedia technologies\n
+        COMP7504\t\tPattern recognition and applications\n
+        COMP7505\t\tUser interface design and development\n
+        COMP7506\t\tSmart phone apps development\n
+        COMP7507\t\tVisualization and visual analytics\n
+        COMP7604\t\tGame design and development\n
+        COMP7807\t\tTopic in multimedia computing\n
+        \n
+        Others\n
+        COMP7104\t\tAdvanced database systems\n
+        COMP7201\t\tAnalysis and design of enterprise applications in UML\n
+        COMP7203\t\tModern software design\n
+        COMP7205\t\tEnterprise architecture\n
+        COMP7303\t\tHigh-performance computing\n
+        COMP7304\t\tThe wireless Internet and mobile network\n
+        COMP7305\t\tCluster and cloud computing\n
+        COMP7306\t\tWeb technologies\n
+        COMP7307\t\tAdvanced real-time embedded systems and applications\n
+        COMP7403\t\tComputational molecular biology\n
+        COMP7404\t\tComputational intelligence and machine learning\n
+        COMP7606\t\tDeep learning\n
+        COMP7801\t\tTopic in computer science\n
+        COMP7805\t\tTopic in computer network and systems\n
+        \n
+        Capstone Experience\n
+        COMP7704\t\tDissertation (24 credits)\n
+        COMP7705\t\tProject (12 credits)\n
+
+
+    </string>
 
 </resources>
