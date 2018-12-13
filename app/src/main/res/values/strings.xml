@@ -3,4 +3,9 @@
     <string name="title_activity_tabbed">TabbedActivity</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$s</string>
+
+    <string name="program_overview">Program Overview</string>
+    <string name="program_overview_detail"><![CDATA[
+        The MSc(CompSc) programme is a comprehensive postgraduate study programme provides advanced and in-depth learning in Computer Science. The programme is credit unit based, with courses of both applied and fundamental nature. Students can choose from a comprehensive and diversified study in Computer Science courses or focussed streams of study. Focussed streams of study represent a cohesive collection of related courses that provides both fundamental and in-depth exposure to students in a given ICT domain.
+    ]]></string>
 </resources>
