@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    public static final int POS_STUDENT = 0;
+    public static final int POS_APPLICANT = 1;
+    public static final int POS_ALUMNI= 2;
+    public static final int POS_OTHERS = 3;
 
     Button btn_student;
     Button btn_applicant;
@@ -26,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         btn_student.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), StudentActivity.class);
+                Intent myIntent = new Intent(v.getContext(), TabbedActivity.class);
+                myIntent.putExtra("pos", POS_STUDENT);
                 startActivity(myIntent);
             }
         });
@@ -34,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
         btn_applicant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), ApplicantActivity.class);
+                Intent myIntent = new Intent(v.getContext(), TabbedActivity.class);
+                myIntent.putExtra("pos", POS_APPLICANT);
                 startActivity(myIntent);
             }
         });
@@ -42,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
         btn_alumni.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), AlumniActivity.class);
+                Intent myIntent = new Intent(v.getContext(), TabbedActivity.class);
+                myIntent.putExtra("pos", POS_ALUMNI);
                 startActivity(myIntent);
             }
         });
@@ -50,12 +57,11 @@ public class MainActivity extends AppCompatActivity {
         btn_others.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), OtherActivity.class);
+                Intent myIntent = new Intent(v.getContext(), TabbedActivity.class);
+                myIntent.putExtra("pos", POS_OTHERS);
                 startActivity(myIntent);
             }
         });
-
-
 
     }
 }

@@ -1,14 +1,20 @@
-package a2.cs.hku.hk.msccs;
+package a2.cs.hku.hk.msccs.fragments;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
-public class StudentActivity extends AppCompatActivity {
+import a2.cs.hku.hk.msccs.R;
+import a2.cs.hku.hk.msccs.StudentCourseActivity;
+import a2.cs.hku.hk.msccs.StudentHelpActivity;
+import a2.cs.hku.hk.msccs.StudentLinkActivity;
 
+public class StudentFragment extends Fragment {
     Button btn_course;
     Button btn_msc_intranet;
     Button btn_portal;
@@ -16,17 +22,24 @@ public class StudentActivity extends AppCompatActivity {
     Button btn_help;
     Button btn_environment;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student);
+    public StudentFragment() {
+    }
 
-        btn_course = (Button)findViewById(R.id.course);
-        btn_msc_intranet = (Button)findViewById(R.id.msc_intranet);
-        btn_portal = (Button)findViewById(R.id.portal);
-        btn_links = (Button)findViewById(R.id.links);
-        btn_help = (Button)findViewById(R.id.help);
-        btn_environment = (Button)findViewById(R.id.environment);
+    public static StudentFragment newInstance() {
+        return new StudentFragment();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // activity_applicant
+        View rootView = inflater.inflate(R.layout.fragment_student, container, false);
+
+        btn_course = (Button) rootView.findViewById(R.id.course);
+        btn_msc_intranet = (Button) rootView.findViewById(R.id.msc_intranet);
+        btn_portal = (Button) rootView.findViewById(R.id.portal);
+        btn_links = (Button ) rootView.findViewById(R.id.links);
+        btn_help = (Button) rootView.findViewById(R.id.help);
+        btn_environment = (Button) rootView.findViewById(R.id.environment);
 
         btn_course.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,5 +98,6 @@ public class StudentActivity extends AppCompatActivity {
             }
         });
 
+        return rootView;
     }
 }
