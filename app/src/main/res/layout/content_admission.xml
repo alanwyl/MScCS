@@ -1,12 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".AdmissionActivity"
     tools:showIn="@layout/activity_admission">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_deadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/application_deadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/application_deadline"
+                android:paddingBottom="16dp"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/application_deadline_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/application_deadline_details"
+                android:layout_below="@+id/application_deadline"/>
+
+            <Button
+                android:id="@+id/application_deadline_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_info"
+                android:theme="@style/PrimaryFlatButton"
+                android:layout_below="@+id/application_deadline_detail"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_composition_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/composition_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/composition_fee"
+                android:paddingBottom="16dp"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/composition_fee_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/composition_fee_details"
+                android:layout_below="@+id/composition_fee"/>
+            <Button
+                android:id="@+id/composition_fee_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_info"
+                android:theme="@style/PrimaryFlatButton"
+                android:layout_below="@+id/composition_fee_detail"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_programme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/programme_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/programme_schedule"
+                android:paddingBottom="16dp"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/programme_schedule_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/programme_schedule_details"
+                android:layout_below="@+id/programme_schedule"/>
+            <Button
+                android:id="@+id/programme_schedule_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_info"
+                android:theme="@style/PrimaryFlatButton"
+                android:layout_below="@+id/programme_schedule_details"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_requirement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <Button
+                android:id="@+id/btn_requirement_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/requirement_more"
+                android:textSize="20sp"
+                android:theme="@style/PrimaryFlatButton"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_learning_environment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <Button
+                android:id="@+id/btn_learning_environment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/learning_environment"
+                android:textSize="20sp"
+                android:theme="@style/PrimaryFlatButton"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,19 +1,24 @@
 package a2.cs.hku.hk.msccs.fragments;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import a2.cs.hku.hk.msccs.AdmissionActivity;
 import a2.cs.hku.hk.msccs.PlanActivity;
 import a2.cs.hku.hk.msccs.R;
 
 public class ApplicantFragment extends Fragment {
+    private FragmentManager fm;
+    private FragmentTransaction ft;
+
     public ApplicantFragment() {
     }
 
@@ -40,6 +45,18 @@ public class ApplicantFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), PlanActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnMore = (Button) rootView.findViewById(R.id.btn_overview_more);
+        btnMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.msc-cs.hku.hk/Curriculum/Programme-Overview"));
                 startActivity(intent);
             }
         });

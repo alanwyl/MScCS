@@ -85,7 +85,45 @@
 
 
     </string>
-    <string name="title_activity_admission">AdmissionActivity</string>
-    <string name="title_activity_plan">PlanActivity</string>
+    <string name="title_activity_admission">2019 Admission</string>
+    <string name="title_activity_plan">MScCS</string>
 
+    <string name="more_info">More information</string>
+
+    <string name="application_deadline">Application Deadline</string>
+    <string name="application_deadline_details"><![CDATA[
+        Main round: 31 December 2018\n
+        Clearing round: 12:00nn (HKT), 15 April 2019\n
+        To be considered, you must submit a complete application, with supporting materials uploaded online, before the deadline.
+    ]]></string>
+
+    <string name="composition_fee">Composition Fees</string>
+    <string name="composition_fee_details"><![CDATA[
+        The composition fee for each 6-credit course is HK$13,000*. Project has a composition fee of HK$26,000 and the Dissertation has a composition fee of HK$52,000. Total composition fee for the two study modes are therefore as follows:\n
+        \n
+        10 courses + Project:\n
+        (HK$13,000 x 10) + (HK$26,000) = HK$156,000\n
+        \n
+        8 Courses + Dissertation:\n
+        (HK$13,000 x 8) + (HK$52,000) = HK$156,000\n
+        \n
+        * Pending for University\'s approval\n
+    ]]></string>
+
+    <string name="programme_schedule">Programme Schedule</string>
+    <string name="programme_schedule_details">
+        <![CDATA[
+            The MSc(CompSc) programme is offered in both full-time and part-time modes.\n
+
+            There are 3 semesters in an academic year, i.e. semester 1: September – December, semester 2: January – May and the summer semester: June – August.\n
+
+            Part-time: 2-3 years\n
+            Full-time: 1-2 years\n
+
+            Classes are usually conducted in weekday evenings from 7:00 p.m., or during weekends. Some courses will be offered mainly for full-time students in weekday daytime.
+        ]]>
+    </string>
+
+    <string name="requirement_more">Admission Requirement</string>
+    <string name="learning_environment">Learning Environment</string>
 </resources>

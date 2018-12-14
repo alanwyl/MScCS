@@ -1,11 +1,12 @@
 package a2.cs.hku.hk.msccs;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 
 public class AdmissionActivity extends AppCompatActivity {
 
@@ -16,14 +17,86 @@ public class AdmissionActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        Button buttonDeadlineMore = findViewById(R.id.application_deadline_more);
+        buttonDeadlineMore.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.msc-cs.hku.hk/Admission/Procedures"));
+                startActivity(intent);
             }
         });
+
+        Button buttonCompositionFeeMore = findViewById(R.id.composition_fee_more);
+        buttonCompositionFeeMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.msc-cs.hku.hk/Admission/Fees"));
+                startActivity(intent);
+            }
+        });
+
+        Button buttonProgrammeScheduleMore = findViewById(R.id.programme_schedule_more);
+        buttonProgrammeScheduleMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.msc-cs.hku.hk/Curriculum/Schedule"));
+                startActivity(intent);
+            }
+        });
+
+        Button buttonRequirementMore = findViewById(R.id.btn_requirement_more);
+        buttonRequirementMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.msc-cs.hku.hk/Admission/Requirements"));
+                startActivity(intent);
+            }
+        });
+
+        Button buttonLearningEnvironment = findViewById(R.id.btn_learning_environment);
+        buttonLearningEnvironment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.msc-cs.hku.hk/StuRes/Environment"));
+                startActivity(intent);
+            }
+        });
+
+        /*
+        btn_donate_tohku.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(Intent.ACTION_SEND);
+                i.setType("message/rfc822");
+                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"msccs@cs.hku.hk"});
+                i.putExtra(Intent.EXTRA_SUBJECT, "I need help");
+                //i.putExtra(Intent.EXTRA_TEXT   , content);
+                try {
+                    startActivity(Intent.createChooser(i, "Send mail..."));
+                } catch (android.content.ActivityNotFoundException ex) {
+                    //Toast.makeText(StudentHelpActivity., "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        */
+
+
     }
 
 }

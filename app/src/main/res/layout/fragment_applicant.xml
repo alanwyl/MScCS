@@ -32,6 +32,15 @@
                 android:layout_height="wrap_content"
                 android:text="@string/program_overview_detail"
                 android:layout_below="@+id/program_overview"/>
+
+            <Button
+                android:id="@+id/btn_overview_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_info"
+                android:theme="@style/PrimaryFlatButton"
+                android:layout_below="@+id/program_overview_detail"/>
+
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
@@ -56,5 +65,7 @@
 
 
     </android.support.v7.widget.GridLayout>
+
+
 
 </LinearLayout>
