@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,9 +14,6 @@ import a2.cs.hku.hk.msccs.PlanActivity;
 import a2.cs.hku.hk.msccs.R;
 
 public class ApplicantFragment extends Fragment {
-    private FragmentManager fm;
-    private FragmentTransaction ft;
-
     public ApplicantFragment() {
     }
 

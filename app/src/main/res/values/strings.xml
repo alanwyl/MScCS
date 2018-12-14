@@ -126,4 +126,10 @@
 
     <string name="requirement_more">Admission Requirement</string>
     <string name="learning_environment">Learning Environment</string>
+
+    <string name="plan_connect">Connect with school</string>
+    <string name="overview_detail">Program Overview Detail</string>
+    <string name="about_hku">About HKU</string>
+    <string name="about_faculty">Faculty</string>
+    <string name="message_from_program">Message from Program Director</string>
 </resources>
