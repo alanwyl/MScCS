@@ -140,4 +140,22 @@
     <string name="connection_alumni_chat">alumni chat</string>
     <string name="connection_phone">phone call</string>
     <string name="connection_submit">Submit</string>
+
+    <string name="department_contact">
+        <![CDATA[
+            Contact us\n
+            The MSc Programme Office\n
+            Department of Computer Science\n
+            P3-02, Graduate House\n
+            The University of Hong Kong\n
+            \n
+            Tel: (852) 3917 1828\n
+            Fax: (852) 2547 4442\n
+            Email: msccs@cs.hku.hk\n
+            Office Hours:\n
+             Mon-Fri: 9:00am-12:30pm\n
+                  1:30pm-5:00pm\n
+               Sat: 9:00am-12:00pm
+        ]]>
+    </string>
 </resources>

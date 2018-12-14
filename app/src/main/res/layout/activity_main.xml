@@ -18,13 +18,12 @@
         android:scaleType="center"
         android:src="@mipmap/icon" />
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:layout_margin="30dp"
+        android:layout_margin="25dp"
         android:text="Who are you?"
         android:textSize="22sp" />
 
@@ -61,5 +60,9 @@
 
 </android.support.v7.widget.GridLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/department_contact"/>
 
 </LinearLayout>
