@@ -21,10 +21,7 @@ public class PlanActivity extends AppCompatActivity {
         buttonConnect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("https://www.msc-cs.hku.hk/StuRes/Environment"));
+                Intent intent = new Intent(v.getContext(), ConnectionActivity.class);
                 startActivity(intent);
             }
         });
@@ -78,26 +75,6 @@ public class PlanActivity extends AppCompatActivity {
         });
 
 
-
-
-        /*
-        btn_donate_tohku.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent i = new Intent(Intent.ACTION_SEND);
-                i.setType("message/rfc822");
-                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"msccs@cs.hku.hk"});
-                i.putExtra(Intent.EXTRA_SUBJECT, "I need help");
-                //i.putExtra(Intent.EXTRA_TEXT   , content);
-                try {
-                    startActivity(Intent.createChooser(i, "Send mail..."));
-                } catch (android.content.ActivityNotFoundException ex) {
-                    //Toast.makeText(StudentHelpActivity., "There are no email clients installed.", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-        */
     }
 
 }

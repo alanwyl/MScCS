@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AdmissionActivity"
+    tools:showIn="@layout/activity_admission"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/connection_prefer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connection_prefer"
+        android:paddingBottom="16dp"
+        android:textSize="30sp"/>
+
+    <CheckBox android:id="@+id/chk_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connection_chat"/>
+    <CheckBox android:id="@+id/chk_tour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connection_tour"/>
+    <CheckBox android:id="@+id/chk_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connection_class"/>
+    <CheckBox android:id="@+id/chk_alumni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connection_alumni_chat"/>
+    <CheckBox android:id="@+id/chk_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connection_phone"/>
+
+    <Button
+        android:id="@+id/btn_connection_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connection_submit"/>
+
+
+</LinearLayout>

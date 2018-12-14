@@ -132,4 +132,12 @@
     <string name="about_hku">About HKU</string>
     <string name="about_faculty">Faculty</string>
     <string name="message_from_program">Message from Program Director</string>
+
+    <string name="connection_prefer">Tell us what you prefer:</string>
+    <string name="connection_chat">coffee chat</string>
+    <string name="connection_tour">school tour</string>
+    <string name="connection_class">sample class</string>
+    <string name="connection_alumni_chat">alumni chat</string>
+    <string name="connection_phone">phone call</string>
+    <string name="connection_submit">Submit</string>
 </resources>
